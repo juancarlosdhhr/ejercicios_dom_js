@@ -29,3 +29,6 @@ console.log(showTestMe);
 
 //1.6 Usa querySelector para mostrar por consola el 3 personaje con el atributo 
 //data-function="testMe".t
+
+const thirdElement = document.querySelector('[data-function="testMe]:nth-of-type(3)');
+console.log(thirdElement); 
