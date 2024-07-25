@@ -15,15 +15,30 @@ console.log(InsertDivP);
 //2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un 
 //	loop con javascript.
 
+const InsertDiv6p =document.createElement("div");
 
+for (let i=0; i < 6; i++) {
+const newPs =document.createElement("p");
+newPs.innerText = `parrafo ${i + 1}`;
+ 
+InsertDiv6p.appendChild(newPs);
+
+}
 
 //2.4 Inserta dinamicamente con javascript en un html una p con el 
 //	texto 'Soy dinámico!'.
 
-
+const InsertPdynamic = document.createElement("p");            
+InsertPdynamic.innerText ="Soy dinámico!";
+document.body.appendChild(InsertPdynamic);
+ 
 
 //2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 
+constInsertH2 =document.querySelector(".fn-insert-here");
+constInsertH2.innerText = "Wubba Lubba dub dub";
+document.body.appendChild(constInsertH2);
+ 
 
 
 
