@@ -32,3 +32,4 @@ console.log(showTestMe);
 
 const thirdElement = document.querySelector('[data-function="testMe]:nth-of-type(3)');
 console.log(thirdElement); 
+
