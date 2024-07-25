@@ -1,11 +1,16 @@
 //2.1 Inserta dinamicamente en un html un div vacio con javascript.
 
-let box2 = document.getElementById("box2");
-box2.insertAdjacentHTML("beforebegin", "<div><p>    </p></div>");
- 
+const newDiv = document.createElement("div");
+
+console.log(newDiv);
+
 //2.2 Inserta dinamicamente en un html un div que contenga una p con javascript.
 
+const InsertDivP =document.createElement("div");
 
+InsertDivP.innerText = "p";
+
+console.log(InsertDivP);
 
 //2.3 Inserta dinamicamente en un html un div que contenga 6 p utilizando un 
 //	loop con javascript.
