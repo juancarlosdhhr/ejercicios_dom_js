@@ -75,8 +75,12 @@ element.parentNode.removeChild(element);
 const InsertPBetween = document.createElement("p");
 InsertPBetween.innerText = "Voy en medio!";
 
+const firstDiv =document.querySelector(".firstDiv");
+const secondDiv =document.querySelector(".secondDiv");
 
-
+if (firstDiv & secondDiv) {
+firstDiv.parentNode.insertBefore(insertPBetween, secondDiv);
+};
     
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase 
 //	.fn-insert-here
