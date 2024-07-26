@@ -46,16 +46,34 @@ document.body.appendChild(constInsertH2);
 //los textos del array.
 const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 
+const UlList = document.createElement("ul");
 
+apps.forEach (function(app) {
+const LiList =document.createElement("li");
+LiList.innerText = app;
+UlList.appendChild(LiList);
+
+document.body.appendChild(UlList);
+
+
+}) ;
 
 
 //2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
 
+const DeleteClass = document.querySelectorAll(".fn-remove-me");
 
+DeleteClass.forEach(function(element) {
+element.parentNode.removeChild(element);
+ 
+});
 
 
 //2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
 //	Recuerda que no solo puedes insertar elementos con .appendChild.
+
+const InsertPBetween = document.createElement("p");
+InsertPBetween.innerText = "Voy en medio!";
 
 
 
