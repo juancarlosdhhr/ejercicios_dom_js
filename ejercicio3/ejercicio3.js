@@ -91,16 +91,46 @@ CreateH4Img.appendChild(div);
 //1.5 Basandote en el ejercicio anterior. Crea un botón que elimine el último 
 //elemento de la serie de divs.
 
+const ButtonRemoveLastElement =document.createElement('button');
+
+ButtonRemoveLastElement.textContent = "Remove Last Element"
+
+ButtonRemoveLastElement.addEventListener("click", function() {
+const divs =document.querySelectorAll('body > div');
+const lastElement = divs[divs.length -1];
+if (lastElement) {
+lastElement.remove();
+
+}
+
+
+});
+document.body.appendChild(ButtonRemoveLastElement);
+
 
 //1.6 Basandote en el ejercicio anterior. Crea un botón para cada uno de los 
 //divs que elimine ese mismo elemento del html.
 
-const ButtonRemoveLastElement = document.querySelector("button");
-ButtonRemoveLastElement.textContent = "RemoveElement"
 
-ButtonRemoveLastElement.addEventListener ("click", function() {
 
-div.remove()	
-});
+//Primero seleccionamos todos los divs del body
+const divs = document.querySelectorAll('body > div');
 
-div.appendChild(ButtonRemoveLastElement);
+//Recorremos cada div
+divs.forEach(function(div) {
+
+	//Creamos el boton
+	const ButtonRemoveEachElement = document.createElement('button');
+	ButtonRemoveEachElement.textContent = "Remove Element";
+	
+	//Creamos un evento click a cada boton
+	ButtonRemoveEachElement.addEventListener ("click", function() {
+	
+	div.remove()	
+	});
+
+
+//Añadimos los botones a los divs
+
+div.appendChild(ButtonRemoveEachElement);
+}); 
