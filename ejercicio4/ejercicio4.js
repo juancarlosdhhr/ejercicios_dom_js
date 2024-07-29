@@ -49,7 +49,7 @@ console.log(input.value);
 
 //Util, por ejemplo, para el autocompletado o sugerencias mientras el usuario escribe
 
-//Basandote en el array siguiente, crea una lista ul > li dinámicamente en el html 
+//1.4.Basandote en el array siguiente, crea una lista ul > li dinámicamente en el html 
 //que imprima cada uno de los albums.
 
 const albums = [
@@ -59,3 +59,29 @@ const albums = [
   "Painkiller",
   "Iron Fist",
 ];
+
+//Crear el espacio donde se insertará la lista
+
+const PrintAlbums = document.getElementById('PrintAlbumHere');
+
+//Creamos el ul
+
+const ul = document.createElement('ul');
+
+//Recorremos el array de los albunes
+
+albums.forEach (function(album) {
+
+//Creamos un li por cada album
+
+const li = document.createElement('li');
+li.textContent = album;
+
+//Metemos los li dentro del ul
+ul.appendChild(li);
+
+
+}
+);
+
+PrintAlbums.appendChild(ul);
