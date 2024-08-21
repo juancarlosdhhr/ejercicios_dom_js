@@ -5,7 +5,7 @@ console.log(showMeButton);
 
 //1.2 Usa querySelector para mostrar por consola el h1 con el id #pillado
 
-const h1Element = document.querySelector("#pillado");
+const h1Element = document.querySelector("#pillado"); 
 console.log(h1Element);
 
 //1.3 Usa querySelector para mostrar por consola todos los p

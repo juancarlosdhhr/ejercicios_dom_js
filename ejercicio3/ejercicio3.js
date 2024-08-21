@@ -1,4 +1,4 @@
-//1.1 Basandote en el array siguiente, crea una lista ul > li 
+/* //1.1 Basandote en el array siguiente, crea una lista ul > li 
 //dinámicamente en el html que imprima cada uno de los paises.
 
 const countries = ['Japón', 'Nicaragua', 'Suiza', 'Australia', 'Venezuela'];
@@ -36,7 +36,7 @@ const createUlCars = document.querySelector ('[data-function="printHere"]');
 
 const ulCars = document.createElement('ul');
 
-countries.forEach(function(country)  {
+countries.forEach(function(cars)  {
 const li = document.createElement('li');
 li.textContent = country;
 ul.appendChild(li);
@@ -48,7 +48,7 @@ ul.appendChild(li);
 createUlCars.appendChild(ul); 
 
 
-const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola']; 
+const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota corola'];  */
 
 //1.4 Crea dinamicamente en el html una serie de divs que contenga un elemento 
 //h4 para el titulo y otro elemento img para la imagen.
@@ -63,9 +63,9 @@ const countries = [
 const CreateH4Img = document.querySelector('body');
 
 countries.forEach(function(country) {
-const div = document.createElement('div');
+const div = document.createElement('div');   
 const h4 = document.createElement('h4');
-const img =document.createElement('img');
+const img =document.createElement('img'); 
 
 //Ahora vamos a asignarle la Url al src:
 

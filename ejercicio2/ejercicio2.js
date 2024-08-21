@@ -78,7 +78,7 @@ InsertPBetween.innerText = "Voy en medio!";
 const firstDiv =document.querySelector(".firstDiv");
 const secondDiv =document.querySelector(".secondDiv");
 
-if (firstDiv & secondDiv) {
+if (firstDiv & secondDiv) { //Si existen o encuentras estas dos clases convertidas a constantes
 firstDiv.parentNode.insertBefore(insertPBetween, secondDiv);
 };
     
