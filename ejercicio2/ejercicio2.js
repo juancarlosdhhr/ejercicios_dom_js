@@ -35,9 +35,9 @@ document.body.appendChild(InsertPdynamic);
 
 //2.5 Inserta en el h2 con la clase .fn-insert-here el texto 'Wubba Lubba dub dub'.
 
-constInsertH2 =document.querySelector(".fn-insert-here");
-constInsertH2.innerText = "Wubba Lubba dub dub";
-document.body.appendChild(constInsertH2);
+ const InsertH2 =document.querySelector(".fn-insert-here");
+ InsertH2.innerText = "Wubba Lubba dub dub";
+document.body.appendChild(InsertH2);
  
 
 
@@ -48,8 +48,8 @@ const apps = ['Facebook', 'Netflix', 'Instagram', 'Snapchat', 'Twitter'];
 
 const UlList = document.createElement("ul");
 
-apps.forEach (function(app) {
-const LiList =document.createElement("li");
+apps.forEach (function(app) {                   
+const LiList =document.createElement("li");         
 LiList.innerText = app;
 UlList.appendChild(LiList);
 
@@ -57,9 +57,24 @@ document.body.appendChild(UlList);
 
 
 }) ;
+ 
+//Con flecha:
+
+apps.forEach(app => {
+    const LiList =document.createElement("li");         
+    LiList.innerText = app;
+    UlList.appendChild(LiList);
+    
+    document.body.appendChild(UlList);
+
+    
+})
 
 
 //2.7 Elimina todos los nodos que tengan la clase .fn-remove-me
+
+
+
 
 const DeleteClass = document.querySelectorAll(".fn-remove-me");
 
@@ -69,17 +84,22 @@ element.parentNode.removeChild(element);
 });
 
 
+
+
 //2.8 Inserta una p con el texto 'Voy en medio!' entre los dos div. 
 //	Recuerda que no solo puedes insertar elementos con .appendChild.
 
 const InsertPBetween = document.createElement("p");
-InsertPBetween.innerText = "Voy en medio!";
+InsertPBetween.textContent = "Voy en medio!";
 
 const firstDiv =document.querySelector(".firstDiv");
 const secondDiv =document.querySelector(".secondDiv");
 
-if (firstDiv & secondDiv) { //Si existen o encuentras estas dos clases convertidas a constantes
-firstDiv.parentNode.insertBefore(insertPBetween, secondDiv);
+if (firstDiv && secondDiv) { //Si existen o encuentras estas dos clases convertidas a constantes
+firstDiv.parentNode.insertBefore(InsertPBetween, secondDiv);
+
+
+
 };
     
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase 
