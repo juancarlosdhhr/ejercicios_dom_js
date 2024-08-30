@@ -105,12 +105,14 @@ firstDiv.parentNode.insertBefore(InsertPBetween, secondDiv);
 //2.9 Inserta p con el texto 'Voy dentro!', dentro de todos los div con la clase 
 //	.fn-insert-here
 
-const InsertPinDivs = document.getElementsByClassName('fn-insert-here');
+const InsertPinDivs = document.querySelectorAll(".fn-insert-here");
 
 for (let i=0; i < InsertPinDivs.length; i++) {
 const newP = document.createElement('p');
 newP.textContent = 'Voy dentro!';
+
+
 InsertPinDivs[i].appendChild(newP); //Para insertar el parrafo nuevo dentro del div actual
-document.body.appendChild(InsertPinDivs);
+
 
 }
