@@ -114,5 +114,6 @@ newP.textContent = 'Voy dentro!';
 
 InsertPinDivs[i].appendChild(newP); //Para insertar el parrafo nuevo dentro del div actual
 
-
+//No poner en este caso document.body.appenchild, porque el bucle dejaria de dar vueltas y se romperia, y lo que queremos
+//es que continue dando vueltas 
 }

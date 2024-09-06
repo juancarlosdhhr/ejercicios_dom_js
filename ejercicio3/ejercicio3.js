@@ -95,11 +95,10 @@ const ButtonRemoveLastElement =document.createElement('button');
 
 ButtonRemoveLastElement.textContent = "Remove Last Element"
 
-ButtonRemoveLastElement.addEventListener("click", function() {
+ButtonRemoveLastElement.addEventListener("click", () => {
 const divs =document.querySelectorAll('body > div');
-const lastElement = divs[divs.length -1];
-if (lastElement) {
-lastElement.remove();
+const lastElement = divs[divs.length -1];  
+if (lastElement) {																									
 
 }
 
